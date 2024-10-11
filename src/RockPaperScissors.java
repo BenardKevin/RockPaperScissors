@@ -29,7 +29,7 @@ public class RockPaperScissors {
             String result = getResult(computerAction, userAction);
 
             System.out.println(result);
-            System.out.println("--- End ---");
+            System.out.println("--- End of the round ---");
         }
         action.close();
     }

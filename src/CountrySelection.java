@@ -3,10 +3,14 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class CountrySelection {
-	Map<String, String[]> winConditions = new HashMap<>();
+	Map<String, String[]> winConditions;
+
+	public CountrySelection(Map<String, String[]> winConditions) {
+		this.winConditions = winConditions;
+	}
 
 	public void countryselection() {
-		System.out.println("Welcome in the Rock Paper Scisors game !");
+		System.out.println("Welcome in the Rock Paper Scissors game !");
 		System.out.println("Where are you from ? Write down your country --> ");
 		Scanner in = new Scanner(System.in);
 		String country = in.next();
