@@ -7,9 +7,10 @@ public class Main {
         winConditions.put("Pierre", new String[]{"Ciseaux"});
         winConditions.put("Papier", new String[]{"Pierre"});
         winConditions.put("Ciseaux", new String[]{"Papier"});
-
+        CountrySelection countryselection = new CountrySelection();
         RockPaperScissors game = new RockPaperScissors(winConditions);
 
+        CountrySelection.countryselection();
         int nbPlay = 10;
         game.play(nbPlay);
     }
